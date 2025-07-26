@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Bluetooth Earbuds - ShopZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">ShopZone</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <form class="search-form">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-btn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </form>
+                <a href="cart.html" class="cart-link">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 4V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h4a1 1 0 0 1 0 2h-1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H3a1 1 0 1 1 0-2h4zM9 3v1h6V3H9zm0 5a1 1 0 0 1 2 0v8a1 1 0 0 1-2 0V8zm4 0a1 1 0 0 1 2 0v8a1 1 0 0 1-2 0V8z"/>
+                    </svg>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <a href="index.html#categories">Electronics</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">Wireless Bluetooth Earbuds</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <main class="product-detail">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="image-preview" style="object-fit: contain;" src="https://images-na.ssl-images-amazon.com/images/I/71xvfA4ozZL._SL1500_.jpg" alt="Wireless Bluetooth Earbuds" id="mainProductImage">
+                        <div class="image-zoom-indicator">🔍 Hover to zoom</div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-meta">
+                        <span class="product-id">ID: #001</span>
+                        <span class="product-category">Electronics</span>
+                    </div>
+                    
+                    <h1 class="product-title">Wireless Bluetooth Earbuds</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">  
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                        <span class="rating-value">4.5</span>
+                        <span class="rating-count">(2,847 reviews)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">$59.99</span>
+                        <span class="original-price">$79.99</span>
+                        <span class="discount-badge">25% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>High-quality sound with noise cancellation. Experience premium audio with our latest wireless earbuds featuring advanced noise cancellation technology, crystal-clear sound quality, and all-day comfort. Perfect for music lovers, professionals, and anyone who demands the best in wireless audio.</p>
+                    </div>
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label class="option-label">Color:</label>
+                            <div class="color-options">
+                                <button class="color-option active" data-color="Black" style="background-color: #000000;" title="Black"></button>
+                                <button class="color-option" data-color="White" style="background-color: #ffffff; border: 1px solid #ddd;" title="White"></button>
+                                <button class="color-option" data-color="Blue" style="background-color: #2563eb;" title="Blue"></button>
+                                <button class="color-option" data-color="Red" style="background-color: #ef4444;" title="Red"></button>
+                            </div>
+                            <span class="selected-color">Black</span>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="option-label">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus" type="button">−</button>
+                                <input type="number" value="1" min="1" max="10" class="qty-input" id="quantity" readonly>
+                                <button class="qty-btn plus" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                            </svg>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary buy-now">Buy Now</button>
+                        <button class="btn btn-outline wishlist">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                            </svg>
+                            Wishlist
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <span class="feature-icon">🚚</span>
+                            <div class="feature-text">
+                                <strong>Free Shipping</strong>
+                                <span>On orders over $50</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">↩️</span>
+                            <div class="feature-text">
+                                <strong>30-Day Returns</strong>
+                                <span>Easy return policy</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🛡️</span>
+                            <div class="feature-text">
+                                <strong>1 Year Warranty</strong>
+                                <span>Manufacturer warranty</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💬</span>
+                            <div class="feature-text">
+                                <strong>24/7 Support</strong>
+                                <span>Customer service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Tabs -->
+            <div class="product-tabs">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" onclick="showTab('specifications')">Specifications</button>
+                    <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+                    <button class="tab-btn" onclick="showTab('shipping')">Shipping & Returns</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="specifications" class="tab-panel active">
+                        <h3>Product Specifications</h3>
+                        <div class="specifications-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Color:</span>
+                                <span class="spec-value">Black</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Battery Life:</span>
+                                <span class="spec-value">20 hours</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Connectivity:</span>
+                                <span class="spec-value">Bluetooth 5.0</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Warranty:</span>
+                                <span class="spec-value">1 year</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">45g</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Charging Time:</span>
+                                <span class="spec-value">2 hours</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Resistance:</span>
+                                <span class="spec-value">IPX4</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Driver Size:</span>
+                                <span class="spec-value">10mm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="reviews" class="tab-panel">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="rating-breakdown">
+                                <div class="overall-rating">
+                                    <span class="rating-number">4.5</span>
+                                    <div class="stars">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star half">★</span>
+                                    </div>
+                                    <span class="total-reviews">Based on 2,847 reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <strong>Sarah Johnson</strong>
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 days ago</span>
+                                </div>
+                                <p class="review-text">Excellent sound quality and battery life. The noise cancellation works great during my commute. Highly recommended!</p>
+                            </div>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <strong>Mike Chen</strong>
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 week ago</span>
+                                </div>
+                                <p class="review-text">Great value for money. Comfortable fit and good sound. Only minor issue is the case could be a bit smaller.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="shipping" class="tab-panel">
+                        <h3>Shipping & Returns</h3>
+                        <div class="shipping-info">
+                            <div class="info-section">
+                                <h4>Shipping Information</h4>
+                                <ul>
+                                    <li>Free standard shipping on orders over $50</li>
+                                    <li>Express shipping available for $9.99</li>
+                                    <li>Standard delivery: 3-5 business days</li>
+                                    <li>Express delivery: 1-2 business days</li>
+                                </ul>
+                            </div>
+                            <div class="info-section">
+                                <h4>Return Policy</h4>
+                                <ul>
+                                    <li>30-day return window</li>
+                                    <li>Items must be in original condition</li>
+                                    <li>Free return shipping</li>
+                                    <li>Refund processed within 5-7 business days</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopZone</h3>
+                    <p>Your trusted partner for premium products and exceptional shopping experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new products and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopZone. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="productDetail.js" type="module"></script>
+</html>

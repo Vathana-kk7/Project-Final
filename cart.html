@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">ShopZone</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <form class="search-form">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-btn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </form>
+                <a href="cart.html" class="cart-link active">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 4V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h4a1 1 0 0 1 0 2h-1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H3a1 1 0 1 1 0-2h4zM9 3v1h6V3H9zm0 5a1 1 0 0 1 2 0v8a1 1 0 0 1-2 0V8zm4 0a1 1 0 0 1 2 0v8a1 1 0 0 1-2 0V8z"/>
+                    </svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Page -->
+    <main class="cart-page">
+        <div class="container">
+            <div class="cart-header">
+                <h1>Shopping Cart</h1>
+                <p>3 items in your cart</p>
+            </div>
+
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items" id="cart-item">
+                    <div class="cart-item" >
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Premium Wireless Headphones">
+                        </div>
+                        <div class="item-details">
+                            <h3>Premium Wireless Headphones</h3>
+                            <p class="item-description">Active noise cancellation, 30-hour battery</p>
+                            <div class="item-specs">
+                                <span>Color: Black</span>
+                                <span>Size: Standard</span>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn minus" type="button">−</button>
+                            <input type="number" value="1" min="1" class="qty-input" readonly>
+                            <button class="qty-btn plus" type="button">+</button>
+                        </div>
+                        <div class="item-price">
+                            <span class="current-price">$299.99</span>
+                            <span class="original-price">$399.99</span>
+                        </div>
+                        <button class="remove-btn" type="button">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Checkout Section -->
+                <div class="checkout-section" id="checkout-section">
+                    <div class="checkout-card">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal (4 items)</span>
+                            <span id="Subtotal">$1,699.96</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="free">Free</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$136.00</span>
+                        </div>
+                        
+                        <div class="summary-row discount">
+                            <span>Discount</span>
+                            <span>-$200.00</span>
+                        </div>
+                        
+                        <hr class="summary-divider">
+                        
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="Total">$1,635.96</span>
+                        </div>
+
+                        <div class="promo-code">
+                            <input id="promo-code-input" type="text" placeholder="Enter promo code" class="promo-input">
+                            <button type="button" class="promo-btn" onclick="applyPromoCode()">Apply</button>
+                        </div>
+
+
+                        <button class="checkout-btn" id="checkout">Proceed to Checkout</button>
+                        
+                        <div class="payment-methods">
+                            <p>We accept:</p>
+                            <div class="payment-icons">
+                                <span>💳</span>
+                                <span>🏦</span>
+                                <span>📱</span>
+                                <span>💰</span>
+                            </div>
+                        </div>
+
+                        <div class="security-info">
+                            <p>🔒 Secure checkout with 256-bit SSL encryption</p>
+                        </div>
+                    </div>
+
+                    <div class="checkout-features">
+                        <div class="feature">
+                            <span class="feature-icon">🚚</span>
+                            <div>
+                                <h4>Free Shipping</h4>
+                                <p>On orders over $50</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">↩️</span>
+                            <div>
+                                <h4>Easy Returns</h4>
+                                <p>30-day return policy</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💬</span>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Customer service available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue Shopping -->
+            <div class="continue-shopping">
+                <a href="index.html" class="continue-btn">← Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopZone</h3>
+                    <p>Your trusted partner for premium products and exceptional shopping experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new products and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopZone. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="carts.js"></script>
+</html>
